@@ -1,0 +1,22 @@
+.hero {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-main);
+  border-bottom: 1px solid var(--border);
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.tab {
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.tab.active {
+  color: var(--text-primary);
+  border-bottom: 3px solid var(--accent);
+  font-size: 20px;
+}

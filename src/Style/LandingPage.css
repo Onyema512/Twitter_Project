@@ -1,0 +1,13 @@
+.landing {
+  display: flex;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+.main-content {
+  flex: 1;
+}
+
+.feed {
+  height: 200vh;
+  padding: 20px;
+}
