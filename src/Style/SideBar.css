@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   height: 100vh;
-  width: 250px;
+  width: 280px;
   padding: 20px;
   background-color: var(--bg-main);
   color: var(--text-primary);
@@ -26,7 +26,7 @@
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  /* gap: 3px; */
 }
 .menu-item {
   cursor: pointer;
@@ -57,12 +57,12 @@
 .post-btn {
   background-color: var(--text-primary);
   color: black;
-  padding:  15px 85px;
+  padding:  15px 90px;
   border-radius: 30px;
   border: none;
   cursor: pointer;
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .post-btn:hover {
   background-color: var(--text-secondary);

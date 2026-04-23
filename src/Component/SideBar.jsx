@@ -5,9 +5,11 @@ import { MdMail, MdBlock } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
 import { BsChatDots } from "react-icons/bs";
 import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 
 const SideBar = () => {
+    const nav = useNavigate();
   return (
     <div className='side_Bar'>
        <div className="logo">
@@ -15,9 +17,9 @@ const SideBar = () => {
         </div>
         <div className="menu-section">
           <div className="menu">
-          <div className="menu-item active"><FaHome /> <span>Home</span></div>
-          <div className="menu-item"><IoIosSearch /> <span>Explore</span></div>
-          <div className="menu-item"><FaBell /> <span>Notifications</span></div>
+          <div className="menu-item active" onClick={() => nav("/home") }><FaHome /> <span>Home</span></div>
+          <div className="menu-item" onClick={() => nav("/explore")}><IoIosSearch /> <span>Explore</span></div>
+          <div className="menu-item" onClick={() => nav("/notifications")}><FaBell /> <span>Notifications</span></div>
           <div className="menu-item"><MdMail /> <span>Messages</span></div>
           <div className="menu-item"><BsChatDots /> <span>Chat</span></div>
           <div className="menu-item"><FaRobot /> <span>Grok</span></div>

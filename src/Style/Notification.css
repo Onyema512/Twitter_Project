@@ -1,0 +1,35 @@
+.notification_main{
+    width: 600px;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+}
+.notification_top {
+    position: sticky;
+    /* top: 0; */
+    /* background: white; */
+    /* z-index: 10; */
+    padding: 10px;
+    color: var(--text-primary);
+}
+.tabs3 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border-bottom: 1px solid var(--border);
+    font-size: 18px;
+}
+.tab3{
+    /* flex: 1; */
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-primary);
+}
+.tab3.active {
+  color: var(--text-primary);
+  border-bottom: 3px solid var(--accent);
+  font-size: 20px;
+}
