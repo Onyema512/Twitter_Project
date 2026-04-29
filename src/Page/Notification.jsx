@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Style/Notification.css'
 import SideBar from '../Component/SideBar'
+import { IoIosSearch } from "react-icons/io";
 
 const Notification = () => {
   return (
@@ -15,6 +16,13 @@ const Notification = () => {
          </div>
         </article>
       </section>
+
+      <div className="notification_right">
+         <div className='not_Search'>
+           <IoIosSearch className='not_Icon' />
+             <input type="text" placeholder='Search' className='search1' />
+          </div>
+      </div>
     </div>
   )
 }

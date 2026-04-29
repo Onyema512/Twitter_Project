@@ -1,0 +1,71 @@
+.grokPage {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+.grokMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  position: relative;
+}
+
+.grokCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}
+
+.grokHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grokTitle {
+  font-size: 56px;
+  margin: 0;
+}
+
+.grokIcon {
+  font-size: 40px;
+  color: white;
+}
+
+.grokSubtitle {
+  color: gray;
+  font-size: 18px;
+  text-align: center;
+}
+
+.grokInputBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 800px;
+  padding: 14px;
+  border: 1px solid darkgray;
+  border-radius: 30px;
+}
+
+.grokInputBox input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+.send{
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 18px 26px;
+  border-radius: 25px;
+  cursor: pointer;
+}

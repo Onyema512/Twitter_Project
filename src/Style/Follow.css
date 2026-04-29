@@ -1,48 +1,51 @@
-.notification_main{
+.follow_main{
     width: 600px;
     border-left: 1px solid var(--border);
     border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
 }
-.notification_top {
+.follow_top{
     position: sticky;
-    /* top: 0; */
-    /* background: white; */
-    /* z-index: 10; */
     padding: 10px;
     color: var(--text-primary);
 }
-.tabs3 {
+.follow_Back{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.tabs4 {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
     border-bottom: 1px solid var(--border);
-    font-size: 18px;
+    font-size: 20px;
+    align-items: center;
 }
-.tab3{
-    /* flex: 1; */
+.tab4{
     text-align: center;
     padding: 12px 0;
     cursor: pointer;
     font-size: 16px;
     color: var(--text-primary);
 }
-.tab3.active {
+.tab4.active{
   color: var(--text-primary);
   border-bottom: 3px solid var(--accent);
   font-size: 20px;
+  font-weight: bold;
 }
-.notification_right {
+.follow_right {
     flex: 1;
 }
-.not_Search{
+.follow_Search{
     position: relative;
     width: 90%;
     margin: 0 auto;
     margin-top: 5px;
 }
-.not_Icon{
+.follow_Icon{
     position: absolute;
     left: 12px;
     top: 50%;
@@ -50,7 +53,7 @@
     font-size: 18px;
     color: var(--text-primary);
 }
-.search1{
+.search2{
     width: 90%;
     padding: 10px 10px 10px 40px;
     border-radius: 25px;

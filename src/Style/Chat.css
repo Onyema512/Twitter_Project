@@ -1,0 +1,103 @@
+.chatPage {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+.sidebar {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 20px;
+  border-right: 1px solid var(--border);
+}
+
+.sidebar svg {
+  font-size: 26px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.sidebar svg:hover {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.chatMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 20px;
+}
+.logo2 img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  /* margin-bottom: 40px; */
+  cursor: pointer;
+}
+.menu-item2.active {
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.title {
+  font-size: 36px;
+  /* text-align: center; */
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.infoBox {
+  width: 100%;
+  max-width: 420px;
+  margin-left: 60px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px; 
+  margin-bottom: 18px; 
+}
+
+.icon {
+  font-size: 30px;
+  color: white; 
+  margin-top: 4px;
+}
+
+.infoItem h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.infoItem p {
+  margin: 3px 0 0;
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.passcodeBtn {
+  margin-top: 20px;
+  width: 100%;
+  /* max-width: 420px; */
+  padding: 10px 80px; 
+  background-color: white; 
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.passcodeBtn:hover {
+  background-color: gray;
+}

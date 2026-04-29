@@ -4,6 +4,7 @@ import { FaHome, FaHashtag, FaBell, FaUser, FaEllipsisH, FaRobot } from "react-i
 import { MdMail, MdBlock } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
 import { BsChatDots } from "react-icons/bs";
+import { SlUserFollow } from "react-icons/sl";
 import Button from './Button';
 import { useNavigate } from 'react-router-dom';
 
@@ -17,12 +18,12 @@ const SideBar = () => {
         </div>
         <div className="menu-section">
           <div className="menu">
-          <div className="menu-item active" onClick={() => nav("/home") }><FaHome /> <span>Home</span></div>
+          <div className="menu-item active" onClick={() => nav("/") }><FaHome /> <span>Home</span></div>
           <div className="menu-item" onClick={() => nav("/explore")}><IoIosSearch /> <span>Explore</span></div>
           <div className="menu-item" onClick={() => nav("/notifications")}><FaBell /> <span>Notifications</span></div>
-          <div className="menu-item"><MdMail /> <span>Messages</span></div>
-          <div className="menu-item"><BsChatDots /> <span>Chat</span></div>
-          <div className="menu-item"><FaRobot /> <span>Grok</span></div>
+          <div className="menu-item" onClick={() => nav("/follow")}><SlUserFollow /> <span>Follow</span></div>
+          <div className="menu-item" onClick={() => nav("/chat")}><BsChatDots /> <span>Chat</span></div>
+          <div className="menu-item" onClick={() => nav("/grok")}><FaRobot /> <span>Grok</span></div>
           <div className="menu-item"><FaUser /> <span>Profile</span></div>
           <div className="menu-item"><FaEllipsisH /> <span>More</span></div>
          </div>
