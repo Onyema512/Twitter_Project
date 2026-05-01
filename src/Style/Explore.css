@@ -58,7 +58,7 @@
 
 .tab2.active {
     font-weight: bold;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     border-bottom: 3px solid var( --accent);
     font-size: 20px;
 }

@@ -7,6 +7,7 @@ import Notification from './Page/Notification'
 import Follow from './Page/Follow'
 import Chat from './Page/Chat'
 import Grok from './Page/Grok'
+import Profile from './Page/Profile'
 
 function App() {
   return (
@@ -18,16 +19,9 @@ function App() {
       <Route path='/follow' element={<Follow/>}/>
       <Route path='/chat' element= {<Chat/>}/>
       <Route path='/grok' element={<Grok/>}/>
+      <Route path='/profile' element={<Profile/>}/>
     </Routes>
     </BrowserRouter>
-        // <BrowserRouter>
-        // <Routes>          
-        // <Route path="/home" element={<LandingPage />} />
-        // <Route path="/explore" element={<Explore />} />
-        // <Route path="/notifications" element={<Notification />} />
-        //   </Routes>
-        // </BrowserRouter>
-    
   )
 }
 

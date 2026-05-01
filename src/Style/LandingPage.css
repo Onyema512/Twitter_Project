@@ -2,12 +2,47 @@
   display: flex;
   background-color: var(--bg-main);
   color: var(--text-primary);
+  height: 100vh;
 }
 .main-content {
-  flex: 1;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  width: 600px; 
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+   /* border: 2px solid blue; */
 }
 
 .feed {
-  height: 200vh;
+  /* height: 200vh; */
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+   /* border: 2px solid red; */
+}
+.post {
+  padding: 15px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.post h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.post p {
+  margin: 5px 0 0;
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.right-content {
+  flex: 1;
+  height: 100vh;
+  border-right: 1px solid var(--border);
   padding: 20px;
 }

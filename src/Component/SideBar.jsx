@@ -24,7 +24,7 @@ const SideBar = () => {
           <div className="menu-item" onClick={() => nav("/follow")}><SlUserFollow /> <span>Follow</span></div>
           <div className="menu-item" onClick={() => nav("/chat")}><BsChatDots /> <span>Chat</span></div>
           <div className="menu-item" onClick={() => nav("/grok")}><FaRobot /> <span>Grok</span></div>
-          <div className="menu-item"><FaUser /> <span>Profile</span></div>
+          <div className="menu-item" onClick={() => nav("/profile")}><FaUser /> <span>Profile</span></div>
           <div className="menu-item"><FaEllipsisH /> <span>More</span></div>
          </div>
         <Button name="Post" className="post-btn"/>
