@@ -6,6 +6,17 @@ import { IoIosSearch } from "react-icons/io";
 const Notification = () => {
       const [activeTab, setActiveTab] = useState("all");
 
+      const allNotifications = [
+  { id: 1, user: "System", text: "Welcome to notifications 🔔" },
+  { id: 2, user: "John", text: "Liked your post" },
+  { id: 3, user: "Mary", text: "Followed you" },
+];
+
+const mentionNotifications = [
+  { id: 1, user: "Alex", text: "@you mentioned in a post" },
+  { id: 2, user: "Dev", text: "@you check this out" },
+];
+
   return (
     <div className='explore_layout'>
       <SideBar/>
@@ -19,6 +30,27 @@ const Notification = () => {
               onClick={() => setActiveTab("mentions")}>Mentions</div>
          </div>
         </article>
+          <section className="notification_feed">
+
+          {activeTab === "all" &&
+            allNotifications.map(item => (
+              <div key={item.id} className="notification_item">
+                <h4>{item.user}</h4>
+                <p>{item.text}</p>
+              </div>
+            ))
+          }
+
+          {activeTab === "mentions" &&
+            mentionNotifications.map(item => (
+              <div key={item.id} className="notification_item">
+                <h4>{item.user}</h4>
+                <p>{item.text}</p>
+              </div>
+            ))
+          }
+
+        </section>
       </section>
 
       <div className="notification_right">

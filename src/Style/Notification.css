@@ -33,6 +33,29 @@
   border-bottom: 3px solid var(--accent);
   font-size: 20px;
 }
+
+.notification_feed {
+  padding: 20px;
+}
+
+.notification_item {
+  padding: 15px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+.notification_item h4{
+    color: var(--text-primary);
+    margin: 0;
+    font-size: 20px;
+}
+
+.notification_item p{
+    color: var(--text-secondary);
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
 .notification_right {
     flex: 1;
 }

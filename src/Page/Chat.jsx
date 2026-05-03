@@ -8,10 +8,11 @@ import { FaShieldAlt } from "react-icons/fa";
 import { FaKey } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { BsChatDots } from "react-icons/bs";
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Chat = () => {
     const nav = useNavigate();
+    const location = useLocation();
   return (
     <div className='chatPage'>
        <aside className="sidebar">
@@ -23,9 +24,10 @@ const Chat = () => {
         {/* <FaHashtag /> */}
         <div className="menu-item2" onClick={() => nav("/notifications")}><FaBell /></div>
         <div className="menu-item2" onClick={() => nav("/follow")}><MdMail /></div>
-        <div className="menu-item2 active" onClick={() => nav("/chat")}><BsChatDots /></div>
+        <div className={`menu-item2 ${location.pathname === "/chat" ? "active" : ""}`}
+               onClick={() => nav("/chat")}><BsChatDots /></div>
         <div className="menu-item2" onClick={() => nav("/grok")}><FaRobot /></div>
-        <FaUser />
+         <div className="menu-item2" onClick={() => nav("/profile")}><FaUser /></div>
         <FaEllipsisH />
 
       </aside>

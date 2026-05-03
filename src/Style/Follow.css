@@ -28,7 +28,7 @@
     padding: 12px 0;
     cursor: pointer;
     font-size: 16px;
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 .tab4.active{
   color: var(--text-primary);
@@ -36,6 +36,77 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+.follow_heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.follow_feed {
+  padding: 20px;
+}
+
+.follow_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.follow_left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.follow_logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.follow_info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.follow_info h4 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 20px;
+}
+
+.follow_info p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.follow_info span {
+  color: white;
+  font-size: 18px;
+}
+
+.follow_btn {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  background: var(--text-primary);
+  color: var(--bg-main);
+  cursor: pointer;
+}
+
+.follow_btn:hover {
+  opacity: 0.9;
+}
+
 .follow_right {
     flex: 1;
 }
